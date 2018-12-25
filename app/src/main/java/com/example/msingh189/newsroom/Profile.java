@@ -22,7 +22,7 @@ public class Profile extends AppCompatActivity {
                 switch (menuItem.getItemId()){
 
                     case R.id.nav_home:
-                        Intent intent1 = new Intent(Profile.this, ClubActivity.class);
+                        Intent intent1 = new Intent(Profile.this, Home.class);
                         startActivity(intent1);
                         break;
 

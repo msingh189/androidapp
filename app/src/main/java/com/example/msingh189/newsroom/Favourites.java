@@ -22,7 +22,7 @@ public class Favourites extends AppCompatActivity {
                 switch (menuItem.getItemId()){
 
                     case R.id.nav_home:
-                        Intent intent1 = new Intent(Favourites.this, ClubActivity.class);
+                        Intent intent1 = new Intent(Favourites.this, Home.class);
                         startActivity(intent1);
                         break;
 

@@ -18,7 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class ClubActivity extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -38,7 +38,7 @@ public class ClubActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_club);
+        setContentView(R.layout.activity_home);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -70,12 +70,12 @@ public class ClubActivity extends AppCompatActivity {
                         break;
 
                     case R.id.nav_fav:
-                        Intent intent1 = new Intent(ClubActivity.this, Favourites.class);
+                        Intent intent1 = new Intent(Home.this, Favourites.class);
                         startActivity(intent1);
                         break;
 
                     case R.id.nav_pro:
-                        Intent intent2 = new Intent(ClubActivity.this, Profile.class);
+                        Intent intent2 = new Intent(Home.this, Profile.class);
                         startActivity(intent2);
                         break;
                 }
@@ -135,7 +135,7 @@ public class ClubActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_club, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_home, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;

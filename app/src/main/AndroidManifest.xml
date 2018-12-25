@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ClubActivity"
+            android:name=".Home"
             android:label="@string/title_activity_club"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
