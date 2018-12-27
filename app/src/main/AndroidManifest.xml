@@ -16,16 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Home"
-            android:label="@string/title_activity_club"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Favourites"
-            android:label="Favourites"/>
-        <activity
-            android:name=".Profile"
-            android:label="Profile"></activity>
+        <activity android:name=".Home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
