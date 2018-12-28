@@ -22,7 +22,7 @@
             android:layout_gravity="bottom"
             android:background="@android:color/white"
             app:elevation="8dp"
-            app:menu="@menu/bottom_navigation" />
+            app:menu="@menu/bottom_nav" />
 
     </android.support.design.widget.CoordinatorLayout>
 

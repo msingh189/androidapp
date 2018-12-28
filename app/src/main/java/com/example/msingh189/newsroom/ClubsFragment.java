@@ -31,41 +31,41 @@ public class ClubsFragment extends Fragment {
 
         View view= inflater.inflate(R.layout.fragment_clubs, container, false);
         clubList = new ArrayList<>();
-        clubCardRecyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
+        clubCardRecyclerView = (RecyclerView)view.findViewById(R.id.clubrecyclerView);
         clubCardRecyclerView.setHasFixedSize(true);
         clubCardRecyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"Manthan","The Music Club of IIT ISM Dhanbad")
+                new Club(R.drawable.ic_launcher_background,"Manthan","")
         );
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"CyberLabs","On the footsteps of MIT MediaLabs, this club aims to learn vital concepts of engineering by working on realtime projects")
+                new Club(R.drawable.ic_launcher_background,"CyberLabs","")
         );
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"LITM","The Official Dance Club of IIT ISM Dhanbad:LITM-Legends In The Making")
+                new Club(R.drawable.ic_launcher_background,"LITM","")
         );
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"LitC","IIT (ISM)'s Literary and Debating Club")
+                new Club(R.drawable.ic_launcher_background,"LitC","")
         );
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"RoboISM","Robotics and AI Club of IIT ISM Dhanbad")
+                new Club(R.drawable.ic_launcher_background,"RoboISM","")
         );
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"FotoFreaks","The Photography Club of IIT-ISM Dhanbad")
+                new Club(R.drawable.ic_launcher_background,"FotoFreaks","")
         );
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"ArtFreaks","The Art Club of IIT-ISM Dhanbad")
+                new Club(R.drawable.ic_launcher_background,"ArtFreaks","")
         );
         clubList.add(
                 new Club(R.drawable.ic_launcher_background,"AIESEC","")
         );
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"Fast Forward India","This Club finds creative and powerful ways to tackle problems that impact the lives of millions underprivileged Indians")
+                new Club(R.drawable.ic_launcher_background,"Fast Forward India","")
         );
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"E-Cell","Entrepreneurship Cell of IIT-ISM which aims to promote the entrepreneurship culture in India")
+                new Club(R.drawable.ic_launcher_background,"E-Cell","")
         );
         clubList.add(
-                new Club(R.drawable.ic_launcher_background,"Mechismu","Official Formula Racing TEam of IIT(ISM) Dhanbad")
+                new Club(R.drawable.ic_launcher_background,"Mechismu","")
         );
 
         adapter = new ClubCardAdapter(this.getActivity(),clubList);

@@ -13,8 +13,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
 public class Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
@@ -51,22 +49,6 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-            case R.id.nav_dash:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new DashFragment()).commit();
-                break;
-            case R.id.nav_clubs:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ClubsFragment()).commit();
-                break;
-            case R.id.nav_notifications:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new NotificationsFragment()).commit();
-                break;
-            case R.id.nav_account:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new AccountFragment()).commit();
-                break;
             case R.id.nav_share:
                 Toast.makeText(this,"Share", Toast.LENGTH_SHORT).show();
                 break;
@@ -100,11 +82,8 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 case R.id.nav_clubs:
                     selectedFragment = new ClubsFragment();
                     break;
-                case R.id.nav_notifications:
-                    selectedFragment = new NotificationsFragment();
-                    break;
-                case R.id.nav_account:
-                    selectedFragment = new AccountFragment();
+                case R.id.nav_sports:
+                    selectedFragment = new SportsFragment();
                     break;
             }
 

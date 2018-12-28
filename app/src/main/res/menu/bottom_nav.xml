@@ -10,11 +10,7 @@
         android:icon="@drawable/ic_group_black_24dp"
         android:title="@string/title_clubs"/>
     <item
-        android:id="@+id/nav_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications"/>
-    <item
-        android:id="@+id/nav_account"
-        android:icon="@drawable/ic_account_circle_black_24dp"
-        android:title="@string/title_account"/>
+        android:id="@+id/nav_sports"
+        android:icon="@drawable/ic_directions_sports_black_24dp"
+        android:title="@string/title_sports"/>
 </menu>

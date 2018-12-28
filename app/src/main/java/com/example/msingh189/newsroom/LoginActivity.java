@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
     public void Login(){
         String userName = Name.getText().toString().trim();
         String userPassword = Password.getText().toString().trim();
-        if(userName.equals("Username") && userPassword.equals("password")){
+        if(userName.equals("admin") && userPassword.equals("1234")){
             Toast.makeText(this,"Username and Password matched",Toast.LENGTH_LONG).show();
             Intent intent = new Intent(LoginActivity.this, Home.class);
             startActivity(intent);

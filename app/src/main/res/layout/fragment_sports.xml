@@ -5,7 +5,7 @@
     android:background="@drawable/gradient">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/clubrecyclerView"
+        android:id="@+id/sportsrecyclerView"
         android:layout_width="match_parent"
         android:layout_height="555dp"
         android:layout_above="@+id/bottom_navigation"/>

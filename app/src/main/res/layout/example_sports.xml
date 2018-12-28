@@ -17,30 +17,30 @@
             android:layout_margin="6dp">
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/clubLogo"
+                android:id="@+id/sportsLogo"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:src="@mipmap/ic_launcher"
                 app:civ_border_width="2dp" />
 
             <TextView
-                android:id="@+id/clubName"
+                android:id="@+id/sportsName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="4dp"
-                android:layout_toRightOf="@+id/clubLogo"
+                android:layout_toRightOf="@+id/sportsLogo"
                 android:text="line 1"
                 android:textColor="#141414"
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/clubDesc"
+                android:id="@+id/sportsDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/clubName"
+                android:layout_below="@+id/sportsName"
                 android:layout_marginLeft="8dp"
-                android:layout_toRightOf="@+id/clubLogo"
+                android:layout_toRightOf="@+id/sportsLogo"
                 android:text="line 2"
                 android:textSize="17sp" />
 
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_notifications_none_black_24dp"
                 android:layout_alignParentRight="true"
-                android:layout_alignBaseline="@id/clubName"/>
+                android:layout_alignBaseline="@id/sportsName"/>
 
         </RelativeLayout>
 
