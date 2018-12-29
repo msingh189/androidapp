@@ -1,5 +1,7 @@
 package com.example.msingh189.newsroom;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
@@ -9,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -44,18 +47,24 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                     new DashFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_dash);
         }
+
+        PreferenceManager.setDefaultValues(this, R.xml.pref_headers, false);
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        switch (menuItem.getItemId()) {
-            case R.id.nav_share:
+            int id = menuItem.getItemId();
+
+            if (id == R.id.nav_settings) {
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+            }else if (id == R.id.nav_share){
                 Toast.makeText(this,"Share", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.nav_send:
-                Toast.makeText(this,"Send", Toast.LENGTH_SHORT).show();
-                break;
-        }
+            }else if (id == R.id.nav_send) {
+                Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
+            }
+
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -69,6 +78,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         super.onBackPressed();
         }
     }
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -92,4 +102,5 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             return true;
         }
     };
+
 }
